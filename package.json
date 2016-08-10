@@ -10,7 +10,7 @@
   "license": "ISC",
   "dependencies": {
     "bootleg": "^0.9.3",
-    "bootstrap": "^3.3.5",
+    "bootstrap": "^4.0.0-alpha.3",
     "browserify": "11.0.1",
     "flux": "2.0.3",
     "gulp": "3.9.0",
