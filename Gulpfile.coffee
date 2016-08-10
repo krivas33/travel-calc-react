@@ -26,12 +26,6 @@ gulp.task '1:html', ->
     .pipe gulp.dest config.paths.dist
     .pipe browserSync.stream()
 
-gulp.task 'connect', ->
-  browserSync.init
-    server:
-      baseDir: './dist'
-    reloadDelay: 1500
-
 gulp.task '2:js', ->
   browserify config.paths.mainJs
     .transform reactify
@@ -41,18 +35,24 @@ gulp.task '2:js', ->
     .pipe gulp.dest config.paths.dist + '/scripts'
     .pipe browserSync.stream()
 
-gulp.task 'css', ->
+gulp.task '3:css', ->
   gulp.src config.paths.css
     .pipe concat 'bundle.css'
     .pipe gulp.dest config.paths.dist + '/css'
 
-gulp.task 'lint', ->
+gulp.task '4:lint', ->
   gulp.src config.paths.js
     .pipe lint config: 'eslint.config.json'
     .pipe lint.format()
 
-gulp.task '3:watch', ->
-  gulp.watch config.paths.html, ['1:html']
-  gulp.watch config.paths.js, ['2:js', 'lint']
+gulp.task '5:connect', -> 
+  browserSync.init
+    server:
+      baseDir: './dist'
+    reloadDelay: 1500
 
-gulp.task 'default', ['1:html', '2:js', 'css', 'lint', 'connect', '3:watch']
+gulp.task '6:watch', ->
+  gulp.watch config.paths.html, ['1:html']
+  gulp.watch config.paths.js, ['2:js', '4:lint']
+
+gulp.task 'default', ['1:html', '2:js', '3:css', '4:lint', '5:connect', '6:watch']
