@@ -14,6 +14,7 @@ var routes = (
    <Route name="vehiclePage" handler={require('./components/3-vehiclePage')} />
    <Route name="gasPage" handler={require('./components/4-gasPage')} />
    <Route name="summaryPage" handler={require('./components/5-summaryPage')} />
+   <Route name="splashPage" handler={require('./components/0-splashPage')} />
  </Route>
 );
 
