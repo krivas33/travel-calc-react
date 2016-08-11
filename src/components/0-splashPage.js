@@ -1,8 +1,8 @@
 /* globals require, module */
 "use strict";
 var React = require('react');
-//var Router = require('react-router');
-//var Link = Router.Link;
+var {Link} = require('react-router');
+
 
 var splashPage = React.createClass({
   render: function() {
@@ -13,7 +13,7 @@ var splashPage = React.createClass({
         <hr/>
         <p>Traveler's Calculator</p>
         <p class="lead">
-          <a class="btn btn-primary btn-lg" href="#" role="button">Lets get started!</a>
+          <Link to="currentPositionPage" className="btn btn-primary btn-lg" role="button">Lets get started!</Link>
         </p>
       </div>
     );
