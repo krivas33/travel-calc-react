@@ -1,8 +1,7 @@
 /* globals require, module */
 "use strict";
 var React = require('react');
-var Router = require('react-router');
-var Link = Router.Link;
+var {Link} = require('react-router');
 var RouteHandler = require('react-router').RouteHandler;
 
 
@@ -15,7 +14,7 @@ var currentPositionPage = React.createClass({
         <hr/>
         <p></p>
         <p class="lead">
-          <a class="btn btn-primary btn-lg" href="#" role="button">Next step!</a>
+          <Link to="goingPage" class="btn btn-primary btn-lg" role="button">Next step!</Link>
         </p>
       </div>
     );
