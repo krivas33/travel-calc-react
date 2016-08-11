@@ -13,6 +13,9 @@ var gasPage = React.createClass({
         <p>Select desired brand.</p>
         <hr/>
         <p></p>
+          <p class="lead">
+            <Link to="vehiclePage" class="btn btn-primary btn-lg" role="button">Back</Link>
+          </p>
         <p class="lead">
           <Link to="summaryPage" class="btn btn-primary btn-lg" role="button">See your results</Link>
         </p>
