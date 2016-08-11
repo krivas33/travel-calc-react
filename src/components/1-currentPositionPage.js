@@ -13,6 +13,9 @@ var currentPositionPage = React.createClass({
         <p>Input or select your current locoation.</p>
         <hr/>
         <p></p>
+          <p class="lead">
+            <Link to="splashPage" class="btn btn-primary btn-lg" role="button">Back</Link>
+          </p>
         <p class="lead">
           <Link to="goingPage" class="btn btn-primary btn-lg" role="button">Next step!</Link>
         </p>
