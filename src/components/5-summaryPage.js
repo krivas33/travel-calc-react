@@ -13,6 +13,9 @@ var summaryPage = React.createClass({
         <p></p>
         <hr/>
         <p></p>
+          <p class="lead">
+            <Link to="gasPage" class="btn btn-primary btn-lg" role="button">Back</Link>
+          </p>
         <p class="lead">
           <Link to="splashPage" class="btn btn-primary btn-lg" role="button">New calculation</Link>
         </p>
