@@ -13,6 +13,9 @@ var goingPage = React.createClass({
         <p>Input your destination's address.</p>
         <hr/>
         <p></p>
+          <p class="lead">
+            <Link to="currentPositionPage" class="btn btn-primary btn-lg" role="button">Back</Link>
+          </p>
         <p class="lead">
           <Link to="vehiclePage" class="btn btn-primary btn-lg" role="button">Next step!</Link>
         </p>
