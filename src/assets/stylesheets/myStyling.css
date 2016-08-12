@@ -128,3 +128,55 @@
   padding-bottom: 10px;
   border-bottom: 3px solid #CCCCCC;
 }
+
+/**
+ * Going Page
+ */
+#going-page .btn {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  background-color: #231F20;
+}
+
+#going-page .btn span {
+  padding-right: 10px;
+}
+
+#going-page .btn i {
+  position: absolute;
+  top: 36px;
+}
+
+#going-page .address p {
+  font-size: 50px;
+  color: black;
+}
+
+#going-page .address p.subtitle {
+  font-size: 35px;
+  color: gray;
+}
+
+#going-page .location i {
+  position: absolute;
+  left: 40px;
+  font-size: 100px;
+  color: gray;
+}
+
+#going-page .location.is-selected i {
+  color: #5FAAC7;
+}
+
+#going-page .location i.checkmark {
+  left: inherit;
+  right: 20px;
+  font-size: 90px;
+}
+
+#going-page .location {
+  padding-top: 30px;
+  padding-bottom: 10px;
+  border-bottom: 3px solid #CCCCCC;
+}

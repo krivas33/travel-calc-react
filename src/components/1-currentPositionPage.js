@@ -8,7 +8,6 @@ var headerStyle = {
   background: "url('images/whereYouLocated.png') center / cover"
 };
 
-
 var showCheck = function(isSelected) {
   if (isSelected === true) {
     return <i className="material-icons checkmark col-sm-2">check</i>;
