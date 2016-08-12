@@ -254,3 +254,59 @@
   padding-top: 25px;
   padding-left: 25px;
 }
+
+/**
+ * Gas Page
+ */
+#gas-page .hero h2 {
+  padding-top: 6px;
+}
+
+#gas-page .btn {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  background-color: #231F20;
+}
+
+#gas-page .btn span {
+  padding-right: 10px;
+}
+
+#gas-page .btn i {
+  position: absolute;
+  top: 36px;
+}
+
+#gas-page .info p {
+  font-size: 50px;
+  color: black;
+}
+
+#gas-page .info p.subtitle {
+  font-size: 35px;
+  color: gray;
+}
+
+#gas-page .station i {
+  position: absolute;
+  left: 40px;
+  font-size: 100px;
+  color: gray;
+}
+
+#gas-page .station.is-selected i {
+  color: #5FAAC7;
+}
+
+#gas-page .station i.checkmark {
+  left: inherit;
+  right: 20px;
+  font-size: 90px;
+}
+
+#gas-page .station {
+  padding-top: 30px;
+  padding-bottom: 10px;
+  border-bottom: 3px solid #CCCCCC;
+}
