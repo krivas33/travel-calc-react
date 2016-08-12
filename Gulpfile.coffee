@@ -12,13 +12,14 @@ config =
   port: 3000
   devBaseUrl: 'http:localhost'
   paths:
-    html: './src/*.html'
-    js: './src/*.js'
+    html: './src/**/*.html'
+    js: './src/**/*.js'
+    images: './src/images/*'
     dist: './dist'
     mainJs: './src/main.js'
     css: [
       'node_modules/bootstrap/dist/css/bootstrap.min.css'
-      'node_modules/bootstrap/dist/css/bootstrap-theme.min.css'
+      'src/assets/stylesheets/*.css'
     ]
 
 gulp.task '1:html', ->
@@ -39,6 +40,12 @@ gulp.task '3:css', ->
   gulp.src config.paths.css
     .pipe concat 'bundle.css'
     .pipe gulp.dest config.paths.dist + '/css'
+    .pipe browserSync.stream()
+
+gulp.task '3.5:images', ->
+  gulp.src config.paths.images
+    .pipe gulp.dest config.paths.dist + '/images'
+    .pipe browserSync.stream()
 
 gulp.task '4:lint', ->
   gulp.src config.paths.js
@@ -54,5 +61,6 @@ gulp.task '5:connect', -> 
 gulp.task '6:watch', ->
   gulp.watch config.paths.html, ['1:html']
   gulp.watch config.paths.js, ['2:js', '4:lint']
+  gulp.watch config.paths.css, ['3:css']
 
-gulp.task 'default', ['1:html', '2:js', '3:css', '4:lint', '5:connect', '6:watch']
+gulp.task 'default', ['1:html', '2:js', '3:css', '3.5:images', '4:lint', '5:connect', '6:watch']
