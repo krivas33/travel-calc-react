@@ -1,3 +1,4 @@
+/* globals require, module */
 "use strict";
 var React = require('react');
 var {Link} = require('react-router');
