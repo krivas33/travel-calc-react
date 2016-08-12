@@ -1,10 +1,19 @@
-/** This is my styling **/
+/**
+ * Global styles
+ */
+.material-icons.md-36 {
+  font-size: 36px;
+  position: absolute;
+  top: 36px;
+}
+
 .btn {
   font-size: 50px;
   width: 100%;
-  background-color: #3F98FE;
   border: none;
   border-radius: 0;
+  font-size: 60px;
+  font-weight: 200;
 }
 
 .nextButton{
@@ -30,6 +39,7 @@
    width: 100%;
    height: 500px;
    color: white;
+   font-size: 47px;
 }
 
 #header {
@@ -37,13 +47,16 @@
   width: 100%;
 }
 
-#description {
-  font-size: 40px;
-  width: 100%;
-}
-
+/**
+ * Splash Page
+ */
 #splash-page {
   padding-top: 190px;
+}
+
+#splash-page #description {
+  font-size: 40px;
+  width: 100%;
 }
 
 #splash-page h1 {
@@ -53,17 +66,29 @@
 }
 
 #splash-page .btn {
+  background-color: #3F98FE;
   position: absolute;
-  font-size: 60px;
-  font-weight: 200;
   bottom: 0;
   left: 0;
-  right: 0;
 }
 
-#tagline {
+#splash-page #tagline {
   color: #3F98FE;
   padding-top: 100px;
   font-size: 47px;
   font-weight: 200;
+}
+
+/**
+ * Current Position Page
+ */
+#current-position-page .btn {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  background-color: #231F20;
+}
+
+#current-position-page .btn span {
+  padding-right: 10px;
 }

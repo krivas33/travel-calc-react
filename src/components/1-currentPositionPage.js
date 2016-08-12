@@ -11,22 +11,20 @@ var headerStyle = {
 var currentPositionPage = React.createClass({
   render: function() {
     return (
-      <div className="background hero">
-        <div className="row image" style={headerStyle}>
+      <div id="current-position-page">
+        <div className="row image hero" style={headerStyle}>
           <h2 className="text-center">Where are you located?</h2>
-        </div>
-
-        <div className="row">
-          <p id="description" className="text-center">Input or select your current locoation.</p>
         </div>
 
         <hr/>
 
         <div className="row">
-          <p className="text-center lead">
-            <Link className="nextButton btn btn-primary btn-lg" to="goingPage" role="button">Next step!</Link>
-          </p>
+          <Link className="text-center nextButton btn btn-primary btn-lg" to="goingPage" role="button">
+            <span>Next Step</span>
+            <i className="material-icons md-36">arrow_forward</i>
+          </Link>
         </div>
+
       </div>
     );
   }
