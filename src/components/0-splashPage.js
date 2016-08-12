@@ -13,7 +13,7 @@ var splashPage = React.createClass({
       <div id="splash-page">
 
         <div className="row">
-          <h1 className="text-center">Travel Calc</h1>
+          <h1 className="text-center">Travel Calculator</h1>
         </div>
 
         <div className="row">

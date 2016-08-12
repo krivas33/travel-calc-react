@@ -32062,7 +32062,7 @@ var splashPage = React.createClass({displayName: "splashPage",
       React.createElement("div", {id: "splash-page"}, 
 
         React.createElement("div", {className: "row"}, 
-          React.createElement("h1", {className: "text-center"}, "Travel Calc")
+          React.createElement("h1", {className: "text-center"}, "Travel Calculator")
         ), 
 
         React.createElement("div", {className: "row"}, 
