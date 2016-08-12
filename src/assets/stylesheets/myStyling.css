@@ -3,8 +3,6 @@
  */
 .material-icons.md-36 {
   font-size: 36px;
-  position: absolute;
-  top: 36px;
 }
 
 .btn {
@@ -91,4 +89,42 @@
 
 #current-position-page .btn span {
   padding-right: 10px;
+}
+
+#current-position-page .btn i {
+  position: absolute;
+  top: 36px;
+}
+
+#current-position-page .address p {
+  font-size: 50px;
+  color: black;
+}
+
+#current-position-page .address p.subtitle {
+  font-size: 35px;
+  color: gray;
+}
+
+#current-position-page .location i {
+  position: absolute;
+  left: 40px;
+  font-size: 100px;
+  color: gray;
+}
+
+#current-position-page .location.is-selected i {
+  color: #5FAAC7;
+}
+
+#current-position-page .location i.checkmark {
+  left: inherit;
+  right: 20px;
+  font-size: 90px;
+}
+
+#current-position-page .location {
+  padding-top: 30px;
+  padding-bottom: 10px;
+  border-bottom: 3px solid #CCCCCC;
 }
