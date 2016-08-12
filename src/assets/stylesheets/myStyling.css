@@ -1,14 +1,23 @@
 /** This is my styling **/
 .btn {
-  font-size: 60px;
-  text-transform: lowercase;
+  font-size: 50px;
   width: 100%;
+  background-color: #3F98FE;
+  border: none;
+  border-radius: 0;
 }
 
 .nextButton{
-  text-transform: lowercase;
   font-size: 50px;
   width: 100%;
+}
+
+.container {
+  padding: 0;
+  width: 100%;
+  height: 100vh;
+  max-width: none;
+  background: #FAFAFA;
 }
 
 .hero {
@@ -16,16 +25,7 @@
   background: white;
 }
 
-.container {
-  width: 100%;
-  max-width: none;
-  background: gray;
-}
-
-h2 {
-   /*position: absolute;
-   top: 200px;
-   left: 0;*/
+.hero h2 {
    padding-top: 350px;
    width: 100%;
    height: 500px;
@@ -42,8 +42,28 @@ h2 {
   width: 100%;
 }
 
-background {
-  width: 100%;
-  height: 100%;
-  color: gray;
+#splash-page {
+  padding-top: 190px;
+}
+
+#splash-page h1 {
+  padding-bottom: 50px;
+  font-size: 81px;
+  color: #3F98FE;
+}
+
+#splash-page .btn {
+  position: absolute;
+  font-size: 60px;
+  font-weight: 200;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+
+#tagline {
+  color: #3F98FE;
+  padding-top: 100px;
+  font-size: 47px;
+  font-weight: 200;
 }
